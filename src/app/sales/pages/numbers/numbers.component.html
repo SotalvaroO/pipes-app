@@ -1,0 +1,19 @@
+<div>
+    <h1>Pipe decimal y de porcentaje</h1>
+    <p>Pipes incluidos en Angular - Usualmente en el Common Module.</p>
+</div>
+
+<div class="grid">
+    <div class="col-4">
+        <p-card header="Ventas netas" subheader="del año">
+            <i class="pi pi-dollar"></i>
+            {{netSales|number:'1.2-2'}} <!-- el 1 es la minima cantidad de enteros. el 2 es el minimo de decimales, el otro 2 es el maximo de decimales -->
+        </p-card>
+    </div>
+    <div class="col-4">
+        <p-card header="Ventas brutas" subheader="del año">
+            <i class="pi pi-dollar"></i>
+            {{netSales + 2000000|currency}}
+        </p-card>
+    </div>
+</div>
