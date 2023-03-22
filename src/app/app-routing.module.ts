@@ -24,9 +24,9 @@ const routes: Routes = [
     component: SortComponent,
   },
   {
-    path:'**',
-    redirectTo:''
-  }
+    path: '**',
+    redirectTo: '',
+  },
 ];
 
 @NgModule({

@@ -12,8 +12,12 @@
     </div>
     <div class="col-4">
         <p-card header="Ventas brutas" subheader="del año">
-            <i class="pi pi-dollar"></i>
-            {{netSales + 2000000|currency}}
+            {{netSales + 2000000|currency:'COP':'symbol-narrow':'1.0-4'}}
+        </p-card>
+    </div>
+    <div class="col-4">
+        <p-card header="Porcentaje de ganancia" subheader="del año">
+            {{percentage | percent:'2.2-2'}}
         </p-card>
     </div>
 </div>
